@@ -1,14 +1,19 @@
 // 管理路由
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory, createWebHistory } from 'vue-router'
 // 导入 layout
 import layout from '@/views/layout/index.vue'
 let router = createRouter({
     // 设置路由模式
-    history: createWebHashHistory(),
+    history: createWebHistory(),
     // 设置路由对象
     routes: [
         { path: '/', redirect: '/layout' },
-        { path: '/layout', component: layout },
+        {
+            path: '/layout', component: layout,
+            children: [
+                { path: '', component: () => import('@/views/home/index.vue') },
+            ]
+        },
     ]
 })
 // 暴露路由对象
