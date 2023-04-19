@@ -35,7 +35,10 @@ export default { name: "AppTopnav" }
             </div>
             <!-- 右侧 -->
             <div class="nav-right">
-                <div class="search"></div>
+                <div class="search">
+                    <input type="text">
+                    <i class="iconfont icon-search"></i>
+                </div>
                 <div class="theme" @click="changeTheme" :style="{ background: themeSh ? '' : '' }">
                     <i class="iconfont icon-dark" v-if="themeSh"></i>
                     <i class="iconfont icon-light" v-else></i>
@@ -72,6 +75,7 @@ export default { name: "AppTopnav" }
                 display: flex;
                 align-items: center;
                 text-decoration: none;
+                font-family: Manrope-ExtraBold;
 
                 .logo-img {
                     width: 52px;
@@ -109,7 +113,7 @@ export default { name: "AppTopnav" }
             }
 
             a {
-                color: #000 !important;
+                font-family: Manrope-Regular;
             }
         }
 
@@ -119,11 +123,34 @@ export default { name: "AppTopnav" }
             align-items: center;
 
             .search {
-                // width: 40px;
-                // height: 40px;
-                // background: #f5f5f5;
-                // border-radius: 50%;
-                // margin-right: 20px;
+                width: 340px;
+                height: 40px;
+                background: #f5f5f5;
+                border-radius: 20px;
+                margin-right: 20px;
+                box-shadow: 0 0 10px #0000001a;
+                display: flex;
+                align-items: center;
+                padding-left: 20px;
+
+                input {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background: transparent;
+                    font-size: 16px;
+                    font-family: Manrope-Regular;
+                }
+
+                .icon-search {
+                    height: 100%;
+                    font-size: 20px;
+                    color: #5D6BB2;
+                    padding: 0 15px;
+                    display: flex;
+                    align-items: center;
+                }
             }
 
             .theme {
@@ -137,7 +164,7 @@ export default { name: "AppTopnav" }
 
                 .icon-light {
                     color: yellow;
-                    text-shadow: 0 0 8px #ff0000;
+                    text-shadow: 0 0 8px #00d9ff;
                 }
 
                 .icon-dark {

@@ -12,6 +12,7 @@
     "@splinetool/runtime": "^0.9.298",
     "@splinetool/vue-spline": "^1.0.1",
     "axios": "^1.3.5",
+    "lottie-web": "^5.11.0",
     "normalize.css": "^8.0.1",
     "pinia": "^2.0.34",
     "vue": "^3.2.41",

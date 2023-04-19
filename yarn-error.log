@@ -1,21 +1,30 @@
 Arguments: 
-  D:\Program Files\nodejs\node.exe C:\Users\87819\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add @splinetool/vue-spline
+  /usr/local/bin/node /usr/local/bin/yarn add web-lottie
 
 PATH: 
-  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;D:\Program Files (x86)\QuickTime\QTSystem\;D:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\4.2\bin;C:\Program Files (x86)\Tencent\微信web开发者工具\dll;D:\Pro;ram Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\Git\cmd;D:\Program Files\nodejs\;D:\Program Files\TortoiseGit\bin;D:\Program Files (x86)\Tencent\微信web开发者工具\dll;C:\Users\87819\AppData\Local\Microsoft\WindowsApps;C:\Users\87819\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\87819\go\bin;C:\src\flutter\bin;C:\Users\87819\AppData\Roaming\npm
+  PATH_TO_FLUTTER_GIT_DIRECTORY/flutter/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/go/bin:/Library/Apple/usr/bin:PATH_TO_FLUTTER_GIT_DIRECTORY/flutter/bin:/Users/mac/development/flutter/bin:/Users/mac/development/flutter/bin
 
 Yarn version: 
   1.22.19
 
 Node version: 
-  18.14.2
+  18.12.1
 
 Platform: 
-  win32 x64
+  darwin x64
 
 Trace: 
-  Error: getaddrinfo EAI_AGAIN cdn.npmmirror.com
-      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:107:26)
+  Error: https://registry.npm.taobao.org/web-lottie: Not found
+      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
+      at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
+      at Request.emit (node:events:513:28)
+      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
+      at Request.emit (node:events:513:28)
+      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
+      at Object.onceWrapper (node:events:627:28)
+      at IncomingMessage.emit (node:events:525:35)
+      at endReadableNT (node:internal/streams/readable:1359:12)
+      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
 
 npm manifest: 
   {
@@ -30,6 +39,7 @@ npm manifest:
     },
     "dependencies": {
       "@splinetool/runtime": "^0.9.298",
+      "@splinetool/vue-spline": "^1.0.1",
       "axios": "^1.3.5",
       "normalize.css": "^8.0.1",
       "pinia": "^2.0.34",
@@ -77,6 +87,11 @@ Lockfile:
     dependencies:
       on-change "^4.0.0"
       semver-compare "^1.0.0"
+  
+  "@splinetool/vue-spline@^1.0.1":
+    version "1.0.1"
+    resolved "https://registry.npmmirror.com/@splinetool/vue-spline/-/vue-spline-1.0.1.tgz"
+    integrity sha512-whhigvIXzEUZa8Jzh8jbrBhwBadOIgJKNx/uPL0CqdGNvvUxN6nXY/ALR/Bs5vHmcOYyvgPSrOK6/f82iKN1+A==
   
   "@types/node@^18.15.11":
     version "18.15.11"
