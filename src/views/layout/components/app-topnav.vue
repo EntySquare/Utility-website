@@ -11,6 +11,20 @@ themeShow.value = themeSh.value
 function changeTheme() {           // 切换主题
     themeSh.value = util.setTheme(); // 设置主题
     themeShow.value = themeSh.value
+    setHomeCardItem()
+}
+function setHomeCardItem() { // 设置首页卡片动画
+    if (!home.temS) {
+        setHomebackcor('#f1f1f1')
+    } else {
+        setHomebackcor('#525252')
+    }
+}
+function setHomebackcor(str: string) { // 设置首页背景颜色
+    home.homeObj.yoZEKkDaaM4Bf0Lc.setBackgroundColor(str)
+    home.homeObj.YFmYddqszej3kVrS.setBackgroundColor(str)
+    home.homeObj.SgyiTMMFrboWvNt2.setBackgroundColor(str)
+    home.homeObj.k4JRyXh7Gy1jhj.setBackgroundColor(str)
 }
 </script>
 <script lang="ts">
