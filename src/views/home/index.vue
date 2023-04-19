@@ -5,21 +5,25 @@ const { home } = MainStore() //使用store
 
 //! 下面部分为引入方式导入动画
 const ivEMfk9ulAFRBn22Show = ref(false)
-// function loaded(Spline: any) {
-//     home.homeObj = Spline
-//     Spline.setZoom(1.4);
-//     Spline.setBackgroundColor('#f1f2f1')
-//     console.log('Spline:', Spline)
-//     console.log('home.homeObj:', home.homeObj)
-// }
-// let ivEMfk9ulAFRBn22: HTMLCanvasElement
-// nextTick(() => {
-//     ivEMfk9ulAFRBn22 = document.getElementById('ivEMfk9ulAFRBn22') as HTMLCanvasElement
-//     setTimeout(() => {
-//         ivEMfk9ulAFRBn22.style.height = 730 + 'px'
-//         ivEMfk9ulAFRBn22Show.value = true
-//     }, 500)
-// })
+function loaded(Spline: any) {
+    home.homeObj = Spline
+    Spline.setZoom(1.4);
+    Spline.setBackgroundColor('#f1f2f1')
+    console.log('Spline:', Spline)
+    console.log('home.homeObj:', home.homeObj)
+}
+let ivEMfk9ulAFRBn22: HTMLCanvasElement
+nextTick(() => {
+    ivEMfk9ulAFRBn22 = document.getElementById('ivEMfk9ulAFRBn22') as HTMLCanvasElement
+    setTimeout(() => {
+        ivEMfk9ulAFRBn22.style.height = 730 + 'px'
+        ivEMfk9ulAFRBn22Show.value = true
+    }, 500)
+})
+//? item 的第一个动画
+function cardItemFun(Spline: any) {
+    Spline.setBackgroundColor('#d9d9d9')
+}
 </script>
 <script lang="ts">
 export default { name: "Home" }
@@ -47,10 +51,18 @@ export default { name: "Home" }
             <div class="card">
                 <div class="card-title">How to start</div>
                 <div class="card-body">
-                    <div class="card-item"> </div>
-                    <div class="card-item"> </div>
-                    <div class="card-item"> </div>
-                    <div class="card-item"> </div>
+                    <div class="card-item">
+                        <!-- <Spline id="yoZEKkDaaM4Bf0Lc" @spline-loaded="cardItemFun" scene="https://prod.spline.design/yoZEKkDaaM4Bf0Lc/scene.splinecode" /> -->
+                    </div>
+                    <div class="card-item">
+                        <!-- <Spline id="YFmYddqszej3kVrS" @spline-loaded="cardItemFun" scene="https://prod.spline.design/YFmYddqszej3kVrS/scene.splinecode" /> -->
+                    </div>
+                    <div class="card-item">
+                        <!-- <Spline id="SgyiTMMFrboWvNt2" @spline-loaded="cardItemFun" scene="https://prod.spline.design/SgyiTMMFrboWvNt2/scene.splinecode" /> -->
+                    </div>
+                    <div class="card-item">
+                        <!-- <Spline id="0k4JRyXh-7Gy1jhj" @spline-loaded="cardItemFun" scene="https://prod.spline.design/0k4JRyXh-7Gy1jhj/scene.splinecode" /> -->
+                    </div>
                 </div>
             </div>
         </div>
@@ -154,6 +166,7 @@ export default { name: "Home" }
                 flex-wrap: wrap;
 
                 .card-item {
+                    overflow: hidden;
                     background: #D9D9D9;
                     border-radius: 25px;
                     width: 576px;
