@@ -15,9 +15,11 @@ function changeTheme() {           // 切换主题
 }
 function setHomeCardItem() { // 设置首页卡片动画
     if (!home.temS) {
-        setHomebackcor('#f1f1f1')
+        // setHomebackcor('#f1f1f1') // 设置首页背景颜色
+        home.homeObj.ivEMfk9ulAFRBn22.setBackgroundColor('#f1f2f1')
     } else {
-        setHomebackcor('#525252')
+        // setHomebackcor('#525252') // 设置首页背景颜色
+        home.homeObj.ivEMfk9ulAFRBn22.setBackgroundColor('#202020')
     }
 }
 function setHomebackcor(str: string) { // 设置首页背景颜色

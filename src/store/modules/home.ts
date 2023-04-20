@@ -11,6 +11,7 @@ let useHomeStore = defineStore('home', {
       YFmYddqszej3kVrS: {} as HomeObj,
       SgyiTMMFrboWvNt2: {} as HomeObj,
       k4JRyXh7Gy1jhj: {} as HomeObj,
+      ivEMfk9ulAFRBn22: {} as HomeObj,
     },
   }),
   actions: {},
