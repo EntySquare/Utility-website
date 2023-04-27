@@ -151,15 +151,35 @@ export default { name: "Home" }
                 <div class="card-title">More about Utility</div>
                 <div class="card-body-two">
                     <div class="card-item-two" :style="{ height: cardYozH }">
+                        <div class="card-item-two-text">
+                            <div class="card-item-two-text-title">什么是尤特？</div>
+                            <div class="card-item-two-text-subtitle">
+                                尤特是面向并行计算处理器建立的全球化去中心超级计算网络，人工智能时代的分散算力已经不能集中解决大模型大规模训练任务，同时为大模型提供推理服务也是弹性计算的内在要求</div>
+                        </div>
                         <img :src="imgUrl[8]" loading="eager" alt="" style="object-position:right;">
                     </div>
                     <div class="card-item-two" :style="{ height: cardYozH }">
+                        <div class="card-item-two-text right">
+                            <div class="card-item-two-text-title">更合理的资产配置</div>
+                            <div class="card-item-two-text-subtitle">
+                                通过参与尤特网络的算力建设，来获取尤特币的激励，尤特币可以支付交易手续费、训练开销、推理开销</div>
+                        </div>
                         <img :src="imgUrl[9]" loading="eager" alt="" style="object-position: left;">
                     </div>
                     <div class="card-item-two" :style="{ height: cardYozH }">
+                        <div class="card-item-two-text">
+                            <div class="card-item-two-text-title">面向服务能力的基础设施</div>
+                            <div class="card-item-two-text-subtitle">
+                                通过尤特网的服务，能够让数以万计的企业拥有同一超级计算资源的起跑线，将人工智能的基石：算力和数据分配给全人类的事业</div>
+                        </div>
                         <img :src="imgUrl[10]" loading="eager" alt="" style="object-position: right;">
                     </div>
                     <div class="card-item-two" :style="{ height: cardYozH }">
+                        <div class="card-item-two-text right">
+                            <div class="card-item-two-text-title">开放式、零成本的网络</div>
+                            <div class="card-item-two-text-subtitle">
+                                任何人，哪怕是刚接触区块链的用户，也可以使用尤特网的服务来获取人工智能的便利，问答、生成图片、智能管家、早餐清单、学习助手</div>
+                        </div>
                         <img :src="imgUrl[11]" loading="eager" alt="" style="object-position: left;">
                     </div>
                 </div>
@@ -168,16 +188,72 @@ export default { name: "Home" }
                 <div class="card-title">Utility Today</div>
                 <div class="card-body-three">
                     <div class="card-item-three" :style="{ height: cardYozH }">
-                        <img src="" alt="">
+                        <div class="card-item-three-text">
+                            <div class="top">UNC Price
+                                <div class="top_right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                            <div class="bom">
+                                <div class="left">$1,920</div>
+                                <div class="right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-item-three" :style="{ height: cardYozH }">
-                        <img src="" alt="">
+                        <div class="card-item-three-text">
+                            <div class="top">今日交易量
+                                <div class="top_right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                            <div class="bom">
+                                <div class="left">1.23M</div>
+                                <div class="right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-item-three" :style="{ height: cardYozH }">
-                        <img src="" alt="">
+                        <div class="card-item-three-text">
+                            <div class="top">Value Locked in Defi (USD)
+                                <div class="top_right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                            <div class="bom">
+                                <div class="left">$21.5B</div>
+                                <div class="right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="card-item-three" :style="{ height: cardYozH }">
-                        <img src="" alt="">
+                        <div class="card-item-three-text">
+                            <div class="top">Nodes
+                                <div class="top_right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                            <div class="bom">
+                                <div class="left">189234</div>
+                                <div class="right">
+                                    <span>30d</span>
+                                    <span>90d</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -214,6 +290,14 @@ export default { name: "Home" }
                 <div class="card-title">Contribute</div>
                 <div class="card-body-two">
                     <div class="card-item-two" :style="{ height: cardYozH }">
+                        <div class="card-item-two-text">
+                            <div class="card-item-two-text-subtitle">
+                                这个网站是开源的，有数百个社区贡献者。您可以对这个网站上的任何内容提出编辑建议，建议出色的新功能，或者帮助我们排除错误。</div>
+                            <div class="card-item-two-text-subtitle">
+                                <div class="link_text">其他平台</div>
+                                <div class="link_text">Github</div>
+                            </div>
+                        </div>
                         <img :src="imgUrl[15]" loading="eager" alt="" style="object-position: right;width: 500px;">
                     </div>
                 </div>
@@ -226,8 +310,10 @@ export default { name: "Home" }
 .home {
     min-height: 2000px;
     width: 100%;
+    padding-bottom: 70px;
 
     .ivEMfk9ulAFRBn22 {
+        cursor: pointer;
         position: relative;
         display: flex;
         justify-content: center;
@@ -376,6 +462,7 @@ export default { name: "Home" }
             }
 
             .card-body-two {
+                position: relative;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
@@ -383,6 +470,7 @@ export default { name: "Home" }
                 align-items: center;
 
                 .card-item-two {
+                    position: relative;
                     margin-top: 25px;
                     border-radius: 25px;
                     background: #222869;
@@ -397,6 +485,51 @@ export default { name: "Home" }
                         border-radius: 25px;
                         object-fit: cover;
                     }
+
+                    .right {
+                        right: 0;
+                    }
+
+                    .card-item-two-text {
+                        color: white;
+                        border-radius: 25px;
+                        position: absolute;
+                        top: 0;
+                        padding: 50px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        height: 100%;
+                        width: 50%;
+                        font-family: Manrope-Regular;
+
+                        .card-item-two-text-title {
+                            font-weight: 400;
+                            font-size: 24px;
+                            line-height: 29px;
+                            margin-bottom: 20px;
+                        }
+
+                        .card-item-two-text-subtitle {
+                            text-align: center;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 150%;
+                            display: flex;
+                            gap: 35px;
+
+                            .link_text {
+                                margin-top: 20px;
+                                text-decoration: none;
+                                font-weight: 600;
+                                margin-left: 5px;
+                                text-decoration-line: underline;
+                            }
+                        }
+
+
+                    }
                 }
             }
 
@@ -409,12 +542,116 @@ export default { name: "Home" }
                 gap: 25px;
 
                 .card-item-three {
+                    position: relative;
                     border-radius: 25px;
-                    background: #D9D9D9;
+                    background: white;
                     filter: drop-shadow(-2px -2px 6px rgba(0, 0, 0, 0.12)) drop-shadow(2px 2px 6px rgba(0, 0, 0, 0.12));
                     max-height: 340px;
                     max-width: 620px;
                     width: 100%;
+
+                    .card-item-three-text {
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        color: black;
+                        padding: 30px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        font-family: Manrope-Regular;
+
+                        .top {
+                            font-weight: 700;
+                            font-size: 24px;
+                            line-height: 29px;
+                        }
+
+                        .top_right {
+                            margin-top: 20px;
+                            display: none;
+                            filter: drop-shadow(-2px -2px 12px rgba(0, 0, 0, 0.12)) drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.12));
+
+                            span {
+                                font-weight: 400;
+                                font-size: 24px;
+                                line-height: 29px;
+                                display: block;
+                                padding: 10px 20px;
+
+                                &:nth-child(1) {
+                                    background-color: #fff;
+                                }
+
+                                &:nth-child(2) {
+                                    background-color: #5D6BB2;
+                                }
+                            }
+                        }
+
+                        .bom {
+                            width: 100%;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+
+                            .left {
+                                font-weight: 700;
+                                font-size: 64px;
+                                line-height: 77px;
+                            }
+
+                            .right {
+                                display: flex;
+                                filter: drop-shadow(-2px -2px 12px rgba(0, 0, 0, 0.12)) drop-shadow(2px 2px 12px rgba(0, 0, 0, 0.12));
+
+                                span {
+                                    font-weight: 400;
+                                    font-size: 24px;
+                                    line-height: 29px;
+                                    display: block;
+                                    padding: 10px 20px;
+
+                                    &:nth-child(1) {
+                                        background-color: #fff;
+                                    }
+
+                                    &:nth-child(2) {
+                                        background-color: #5D6BB2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 55%;
+                        border-radius: 25px;
+                        background: linear-gradient(180deg, #5D6BB2 0%, rgba(223, 226, 240, 0.54) 100%);
+                        z-index: -2;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 25px;
+                        background-image: url('@/assets/images/blx.png');
+                        background-repeat: no-repeat;
+                        background-size: 100%;
+                        background-position: center;
+                        z-index: -1;
+                    }
                 }
             }
 

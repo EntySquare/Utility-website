@@ -166,6 +166,7 @@ export default { name: "AppTopnav" }
                     padding: 0 15px;
                     display: flex;
                     align-items: center;
+                    cursor: pointer;
                 }
             }
 
